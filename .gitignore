@@ -1,0 +1,8 @@
+/laravel54/node_modules
+/laravel54/public/storage
+/laravel54/storage/*.key
+/laravel54/vendor
+/laravel54/.idea
+/laravel54/Homestead.json
+/laravel54/Homestead.yaml
+/laravel54/.env
