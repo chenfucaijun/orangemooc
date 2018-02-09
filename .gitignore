@@ -7,4 +7,4 @@
 /laravel54/Homestead.yaml
 /laravel54/.env
 .DS_Store
-.idea/*
+.idea
