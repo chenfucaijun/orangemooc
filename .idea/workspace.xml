@@ -2,88 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0dc5d42-c998-4145-a6ff-e72ab965334b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/laravel54/.env.example" afterPath="$PROJECT_DIR$/laravel54/.env.example" />
-      <change beforePath="$PROJECT_DIR$/laravel54/.gitattributes" afterPath="$PROJECT_DIR$/laravel54/.gitattributes" />
-      <change beforePath="$PROJECT_DIR$/laravel54/.gitignore" afterPath="$PROJECT_DIR$/laravel54/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/laravel54/app/Console/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/laravel54/app/Exceptions/Handler.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/ForgotPasswordController.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/LoginController.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/RegisterController.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/ResetPasswordController.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Auth/ResetPasswordController.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Controllers/Controller.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Middleware/EncryptCookies.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Middleware/EncryptCookies.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Middleware/TrimStrings.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Middleware/TrimStrings.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/laravel54/app/Http/Middleware/VerifyCsrfToken.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/laravel54/app/Providers/AppServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Providers/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/laravel54/app/Providers/AuthServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Providers/BroadcastServiceProvider.php" afterPath="$PROJECT_DIR$/laravel54/app/Providers/BroadcastServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/laravel54/app/Providers/EventServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/laravel54/app/Providers/RouteServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/app/User.php" afterPath="$PROJECT_DIR$/laravel54/app/User.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/bootstrap/app.php" afterPath="$PROJECT_DIR$/laravel54/bootstrap/app.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/laravel54/bootstrap/autoload.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/bootstrap/cache/.gitignore" afterPath="$PROJECT_DIR$/laravel54/bootstrap/cache/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/composer.json" afterPath="$PROJECT_DIR$/laravel54/composer.json" />
-      <change beforePath="$PROJECT_DIR$/laravel54/composer.lock" afterPath="$PROJECT_DIR$/laravel54/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/app.php" afterPath="$PROJECT_DIR$/laravel54/config/app.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/auth.php" afterPath="$PROJECT_DIR$/laravel54/config/auth.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/broadcasting.php" afterPath="$PROJECT_DIR$/laravel54/config/broadcasting.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/cache.php" afterPath="$PROJECT_DIR$/laravel54/config/cache.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/database.php" afterPath="$PROJECT_DIR$/laravel54/config/database.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/filesystems.php" afterPath="$PROJECT_DIR$/laravel54/config/filesystems.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/mail.php" afterPath="$PROJECT_DIR$/laravel54/config/mail.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/queue.php" afterPath="$PROJECT_DIR$/laravel54/config/queue.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/services.php" afterPath="$PROJECT_DIR$/laravel54/config/services.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/session.php" afterPath="$PROJECT_DIR$/laravel54/config/session.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/config/view.php" afterPath="$PROJECT_DIR$/laravel54/config/view.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/database/.gitignore" afterPath="$PROJECT_DIR$/laravel54/database/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/laravel54/database/factories/ModelFactory.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/laravel54/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/laravel54/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/laravel54/database/seeds/DatabaseSeeder.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/package.json" afterPath="$PROJECT_DIR$/laravel54/package.json" />
-      <change beforePath="$PROJECT_DIR$/laravel54/phpunit.xml" afterPath="$PROJECT_DIR$/laravel54/phpunit.xml" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/.htaccess" afterPath="$PROJECT_DIR$/laravel54/public/.htaccess" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/css/app.css" afterPath="$PROJECT_DIR$/laravel54/public/css/app.css" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/favicon.ico" afterPath="$PROJECT_DIR$/laravel54/public/favicon.ico" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/index.php" afterPath="$PROJECT_DIR$/laravel54/public/index.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/js/app.js" afterPath="$PROJECT_DIR$/laravel54/public/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/robots.txt" afterPath="$PROJECT_DIR$/laravel54/public/robots.txt" />
-      <change beforePath="$PROJECT_DIR$/laravel54/public/web.config" afterPath="$PROJECT_DIR$/laravel54/public/web.config" />
-      <change beforePath="$PROJECT_DIR$/laravel54/readme.md" afterPath="$PROJECT_DIR$/laravel54/readme.md" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/assets/js/app.js" afterPath="$PROJECT_DIR$/laravel54/resources/assets/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/assets/js/bootstrap.js" afterPath="$PROJECT_DIR$/laravel54/resources/assets/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/assets/js/components/Example.vue" afterPath="$PROJECT_DIR$/laravel54/resources/assets/js/components/Example.vue" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/assets/sass/_variables.scss" afterPath="$PROJECT_DIR$/laravel54/resources/assets/sass/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/laravel54/resources/assets/sass/app.scss" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/lang/en/auth.php" afterPath="$PROJECT_DIR$/laravel54/resources/lang/en/auth.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/lang/en/pagination.php" afterPath="$PROJECT_DIR$/laravel54/resources/lang/en/pagination.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/lang/en/passwords.php" afterPath="$PROJECT_DIR$/laravel54/resources/lang/en/passwords.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/lang/en/validation.php" afterPath="$PROJECT_DIR$/laravel54/resources/lang/en/validation.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/laravel54/resources/views/welcome.blade.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/routes/api.php" afterPath="$PROJECT_DIR$/laravel54/routes/api.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/routes/channels.php" afterPath="$PROJECT_DIR$/laravel54/routes/channels.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/routes/console.php" afterPath="$PROJECT_DIR$/laravel54/routes/console.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/routes/web.php" afterPath="$PROJECT_DIR$/laravel54/routes/web.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/server.php" afterPath="$PROJECT_DIR$/laravel54/server.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/app/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/app/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/app/public/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/app/public/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/framework/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/framework/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/framework/cache/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/framework/cache/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/framework/sessions/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/framework/sessions/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/framework/views/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/framework/views/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/storage/logs/.gitignore" afterPath="$PROJECT_DIR$/laravel54/storage/logs/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/laravel54/tests/CreatesApplication.php" afterPath="$PROJECT_DIR$/laravel54/tests/CreatesApplication.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/tests/Feature/ExampleTest.php" afterPath="$PROJECT_DIR$/laravel54/tests/Feature/ExampleTest.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/tests/TestCase.php" afterPath="$PROJECT_DIR$/laravel54/tests/TestCase.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/tests/Unit/ExampleTest.php" afterPath="$PROJECT_DIR$/laravel54/tests/Unit/ExampleTest.php" />
-      <change beforePath="$PROJECT_DIR$/laravel54/webpack.mix.js" afterPath="$PROJECT_DIR$/laravel54/webpack.mix.js" />
-      <change beforePath="$PROJECT_DIR$/test.md" afterPath="$PROJECT_DIR$/test.md" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,8 +20,18 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel54/.env">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -217,11 +147,6 @@
               <item name="orangemooc" type="b2602c69:ProjectViewProjectNode" />
               <item name="orangemooc" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="orangemooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orangemooc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -270,7 +195,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143000" />
+    <option name="totallyTimeSpent" value="180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="704" extended-state="6" />
@@ -307,10 +232,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/laravel54/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
