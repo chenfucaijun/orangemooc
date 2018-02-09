@@ -5,7 +5,7 @@
         @foreach($posts as $post)
 
             <div>
-                <h2>{{$post->title}}
+                <a href="/posts/{{$post->id}}"> <h2>{{$post->title}}</a>
                 </h2>
                 <div>______________</div>
                 {{str_limit($post->content,100,'...')}}

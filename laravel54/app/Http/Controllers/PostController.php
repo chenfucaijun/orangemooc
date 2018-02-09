@@ -17,6 +17,17 @@ class PostController extends Controller
 
     }
 
+    /*
+     * 文章详情页
+     */
+    public function show(Post $post)
+    {
+
+
+        return view('post/show', compact('post'));
+
+    }
+
 
     /*
      * 新建文章
