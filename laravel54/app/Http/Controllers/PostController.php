@@ -43,6 +43,7 @@ class PostController extends Controller
      */
     public function store()
     {
+        dd(\request()->all());
         return view('post/store');
 
     }
