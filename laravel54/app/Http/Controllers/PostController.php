@@ -24,7 +24,8 @@ class PostController extends Controller
     public function show(Post $post)
     {
 
-
+        //预加载,以便于在模板中使用关联模型的时候，预先加载数据，达到MVC的效果
+        $post->load('comments');
         return view('post/show', compact('post'));
 
     }
