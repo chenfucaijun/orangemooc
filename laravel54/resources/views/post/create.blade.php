@@ -14,7 +14,7 @@
             <div class="form-group">
                 <label for="">内容</label>
 
-                <textarea name="content" id="" cols="30" rows="10" placeholder="这里是内容"></textarea>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="这里是内容"></textarea>
 
                 <button type="submit" class="btn btn-default">提交</button>
             </div>

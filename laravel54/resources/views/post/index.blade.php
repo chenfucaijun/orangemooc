@@ -8,7 +8,9 @@
                 <a href="/posts/{{$post->id}}"> <h2>{{$post->title}}</a>
                 </h2>
                 <div>______________</div>
-                {{str_limit($post->content,100,'...')}}
+                {{--{{str_limit($post->content,100,'...')}}--}}
+                {{--直接渲染html代码--}}
+                {!! str_limit($post->content,100,'...') !!}
                 <div>______________</div>
                 {{$post->created_at->toFormattedDateString()}}
 
