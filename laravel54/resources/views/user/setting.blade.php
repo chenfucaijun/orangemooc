@@ -4,6 +4,7 @@
 
     <div class="col-sm-8 blog-main">
         setting
+        <div>{{\Auth::user()->name}}</div>
         {{--<form class="form-horizontal" action="/user/{{\Auth::id()}}/setting" method="POST" enctype="multipart/form-data">--}}
             {{--<input type="hidden" name="_token" value="{{csrf_token()}}">--}}
             {{--<div class="form-group">--}}

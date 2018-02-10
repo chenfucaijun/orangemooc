@@ -11,7 +11,7 @@
                 {{--{{str_limit($post->content,100,'...')}}--}}
                 {{--直接渲染html代码--}}
                 {!! str_limit($post->content,100,'...') !!}
-                {{$post->created_at->toFormattedDateString()}}
+                {{$post->created_at->toFormattedDateString()}} by {{$post->user->name}}
 
             </div>
         @endforeach

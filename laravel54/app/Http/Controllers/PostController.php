@@ -53,8 +53,9 @@ class PostController extends Controller
             'content.required' => "必须输入内容",
         ]);
 
-//        $params = ['title' => request('title'),'content' => request('content')];
-        $params = request(['title', 'content']);
+        //逻辑
+        $user_id = \Auth::id();
+        $params = array_merge( request(['title', 'content']),compact('user_id'));
         $post = Post::create($params);
 
         return redirect('/posts');
