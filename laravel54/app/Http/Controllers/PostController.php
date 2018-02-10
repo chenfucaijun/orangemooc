@@ -43,6 +43,16 @@ class PostController extends Controller
      */
     public function store()
     {
+
+        //验证
+        $this->validate(request(), [
+            'title' => 'required|max:255|min:4',
+            'content' => 'required|min:8',
+        ],[
+            'title.min' => "至少输入4个字符",
+            'content.required' => "必须输入内容",
+        ]);
+
 //        $params = ['title' => request('title'),'content' => request('content')];
         $params = request(['title','content']);
         $post = Post::create($params);

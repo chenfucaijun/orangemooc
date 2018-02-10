@@ -18,6 +18,7 @@
 
                 <button type="submit" class="btn btn-default">提交</button>
             </div>
+            @include('layout.error')
 
         </form>
 
