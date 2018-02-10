@@ -64,21 +64,29 @@ class PostController extends Controller
     /*
      * 编辑文章
      */
-    public function edit()
+    public function edit(Post $post)
     {
-        return view('post/edit');
-
-
+        return view('post/edit', compact('post'));
     }
 
 
     /*
      * 更新文章
      */
-    public function update()
+    public function update(Post $post)
     {
+        //验证
+        $this->validate(request(), [
+            'title' => 'required|max:255|min:4',
+            'content' => 'required|min:10',
+        ]);
 
+        //更新数据
+        $post->title = request('title');
+        $post->content = request('content');
 
+        $post->save();
+        return redirect("/posts/{$post->id}");
     }
 
 
@@ -96,6 +104,6 @@ class PostController extends Controller
     public function imageUpload(Request $request)
     {
         $path = $request->file('wangEditorH5File')->storePublicly(md5(time()));
-        return asset('storage/'.$path);
+        return asset('storage/' . $path);
     }
 }
