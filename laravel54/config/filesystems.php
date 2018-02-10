@@ -11,9 +11,11 @@ return [
     | by the framework. The "local" disk, as well as a variety of cloud
     | based disks are available to your application. Just store away!
     |
+    默认情况下local：将这些文件存储在 storage/app/public目录下
+    需要创建 public/storage 到 storage/app/public 的符号链接,需要改成public
     */
 
-    'default' => 'local',
+    'default' => 'public',
 
     /*
     |--------------------------------------------------------------------------

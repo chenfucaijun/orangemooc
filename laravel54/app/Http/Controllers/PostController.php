@@ -48,13 +48,13 @@ class PostController extends Controller
         $this->validate(request(), [
             'title' => 'required|max:255|min:4',
             'content' => 'required|min:8',
-        ],[
+        ], [
             'title.min' => "至少输入4个字符",
             'content.required' => "必须输入内容",
         ]);
 
 //        $params = ['title' => request('title'),'content' => request('content')];
-        $params = request(['title','content']);
+        $params = request(['title', 'content']);
         $post = Post::create($params);
 
         return redirect('/posts');
@@ -88,5 +88,14 @@ class PostController extends Controller
     public function delete()
     {
 
+    }
+
+    /*
+     * 图片上传
+     */
+    public function imageUpload(Request $request)
+    {
+        $path = $request->file('wangEditorH5File')->storePublicly(md5(time()));
+        return asset('storage/'.$path);
     }
 }
