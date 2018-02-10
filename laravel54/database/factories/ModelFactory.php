@@ -33,7 +33,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->sentence(3),
         'content' => $faker->paragraph(8),
-        'user_id' => $faker->numberBetween($min = 1, $max = 100),
+        'user_id' => $faker->numberBetween($min = 1, $max = 3),
     ];
 });
 

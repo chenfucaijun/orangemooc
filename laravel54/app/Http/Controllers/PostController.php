@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Comment;
 
 class PostController extends Controller
 {
@@ -55,7 +56,7 @@ class PostController extends Controller
 
         //逻辑
         $user_id = \Auth::id();
-        $params = array_merge( request(['title', 'content']),compact('user_id'));
+        $params = array_merge(request(['title', 'content']), compact('user_id'));
         $post = Post::create($params);
 
         return redirect('/posts');
@@ -83,7 +84,7 @@ class PostController extends Controller
         ]);
 
         //对用户授权：修改
-        $this->authorize('update',$post);
+        $this->authorize('update', $post);
 
         //更新数据
         $post->title = request('title');
@@ -100,7 +101,7 @@ class PostController extends Controller
     public function delete(Post $post)
     {
         //对用户授权：修改
-        $this->authorize('delete',$post);
+        $this->authorize('delete', $post);
         $post->delete();
         return redirect('/posts');
     }
@@ -112,5 +113,27 @@ class PostController extends Controller
     {
         $path = $request->file('wangEditorH5File')->storePublicly(md5(time()));
         return asset('storage/' . $path);
+    }
+
+    /*
+     * 提交评论
+     */
+    public function comment(Post $post)
+    {
+
+        //验证
+        $this->validate(request(), [
+            'content' => 'required|min:3',
+        ]);
+
+        //逻辑
+        $comment = new Comment();
+        $comment->user_id = \Auth::id();
+        $comment->content = request('content');
+        $post->comments()->save($comment);
+
+        //渲染
+
+        return back();
     }
 }

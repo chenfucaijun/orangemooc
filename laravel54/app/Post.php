@@ -15,7 +15,7 @@ class Post extends Model
     }
 
     //评论模型
-    public function comment(){
+    public function comments(){
         return $this->hasMany('App\Comment')->orderBy('created_at','desc');
     }
 
