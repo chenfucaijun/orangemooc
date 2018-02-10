@@ -1,6 +1,7 @@
 @extends('layout.main')
 
 @section('content')
+    <div>{{Auth::id()}}</div>
     <div>
         @foreach($posts as $post)
 
