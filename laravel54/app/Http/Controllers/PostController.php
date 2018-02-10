@@ -96,7 +96,7 @@ class PostController extends Controller
     public function delete(Post $post)
     {
         //TODO:用户的权限验证
-        
+
         $post->delete();
         return redirect('/posts');
     }
