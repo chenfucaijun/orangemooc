@@ -38,6 +38,10 @@ Route::get('/posts', '\App\Http\Controllers\PostController@index');
 //创建文章
 Route::get('/posts/create', '\App\Http\Controllers\PostController@create');
 
+//搜索
+Route::get('/posts/search', '\App\Http\Controllers\PostController@search');
+
+
 //保存新创建的文章
 Route::post('/posts', '\App\Http\Controllers\PostController@store');
 
@@ -62,4 +66,3 @@ Route::post('/posts/{post}/comment', '\App\Http\Controllers\PostController@comme
 Route::get('/posts/{post}/zan', '\App\Http\Controllers\PostController@zan');
 Route::get('/posts/{post}/unzan', '\App\Http\Controllers\PostController@unzan');
 
-Route::get('/posts/search', '\App\Http\Controllers\PostController@search');

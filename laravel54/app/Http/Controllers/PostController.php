@@ -141,7 +141,8 @@ class PostController extends Controller
     /*
      * 点赞
      */
-    public function zan(Post $post){
+    public function zan(Post $post)
+    {
         $zan = new \App\Zan;
         $zan->user_id = \Auth::id();
         $post->zans()->save($zan);
@@ -155,5 +156,13 @@ class PostController extends Controller
     {
         $post->zan(\Auth::id())->delete();
         return back();
+    }
+
+    /*
+     * 搜索
+     */
+    public function search()
+    {
+        return "this is search";
     }
 }
