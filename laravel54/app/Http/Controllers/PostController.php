@@ -163,6 +163,16 @@ class PostController extends Controller
      */
     public function search()
     {
-        return "this is search";
+        //验证
+        $this->validate(request(),[
+           'query' => 'required'
+        ]);
+
+        //逻辑
+        $query = request('query');
+        $posts = \App\Post::search($query)->paginate(2);
+
+        //渲染
+        return view('post/search',compact('posts','query'));
     }
 }

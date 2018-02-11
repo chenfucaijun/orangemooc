@@ -34,6 +34,7 @@
 
 <body>
 
+@include('layout.nav')
 
 <div class="container">
 
