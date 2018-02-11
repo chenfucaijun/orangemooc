@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->withCount("comments")->paginate(5);
+        $posts = Post::orderBy('created_at', 'desc')->withCount("zans")->withCount("comments")->paginate(5);
         return view('post/index', compact('posts'));
 
     }
@@ -135,6 +135,25 @@ class PostController extends Controller
 
         //渲染
 
+        return back();
+    }
+
+    /*
+     * 点赞
+     */
+    public function zan(Post $post){
+        $zan = new \App\Zan;
+        $zan->user_id = \Auth::id();
+        $post->zans()->save($zan);
+        return back();
+    }
+
+    /*
+    * 取消点赞
+    */
+    public function unzan(Post $post)
+    {
+        $post->zan(\Auth::id())->delete();
         return back();
     }
 }
