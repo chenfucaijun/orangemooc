@@ -11,7 +11,9 @@
                 {{--{{str_limit($post->content,100,'...')}}--}}
                 {{--直接渲染html代码--}}
                 {!! str_limit($post->content,100,'...') !!}
-                {{$post->created_at->toFormattedDateString()}} by {{$post->user->name}}
+                {{$post->created_at->toFormattedDateString()}} by
+                <a href="/user/{{$post->user->id}}"> {{$post->user->name}}
+                </a>
                 <p class="blog-post-meta">赞 {{$post->zans_count}}| 评论 {{$post->comments_count}}</p>
             </div>
         @endforeach

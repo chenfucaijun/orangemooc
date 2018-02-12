@@ -68,8 +68,8 @@ Route::get('/posts/{post}/unzan', '\App\Http\Controllers\PostController@unzan');
 
 
 // 个人设置
-Route::get('/user/me/setting', '\App\Http\Controllers\UserController@setting');
-Route::post('/user/me/setting', '\App\Http\Controllers\UserController@settingStore');
+Route::get('/user/{user}/setting', '\App\Http\Controllers\UserController@setting');
+Route::post('/user/{user}/setting', '\App\Http\Controllers\UserController@settingStore');
 
 // 个人主页
 Route::get('/user/{user}', '\App\Http\Controllers\UserController@show');
