@@ -66,3 +66,14 @@ Route::post('/posts/{post}/comment', '\App\Http\Controllers\PostController@comme
 Route::get('/posts/{post}/zan', '\App\Http\Controllers\PostController@zan');
 Route::get('/posts/{post}/unzan', '\App\Http\Controllers\PostController@unzan');
 
+
+// 个人设置
+Route::get('/user/me/setting', '\App\Http\Controllers\UserController@setting');
+Route::post('/user/me/setting', '\App\Http\Controllers\UserController@settingStore');
+
+// 个人主页
+Route::get('/user/{user}', '\App\Http\Controllers\UserController@show');
+Route::post('/user/{user}/fan', '\App\Http\Controllers\UserController@fan');
+Route::post('/user/{user}/unfan', '\App\Http\Controllers\UserController@unfan');
+
+

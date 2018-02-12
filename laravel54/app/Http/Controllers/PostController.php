@@ -13,8 +13,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->withCount("zans")->withCount("comments")->paginate(5);
-        return view('post/index', compact('posts'));
+        $user = \Auth::user();
+
+        $posts = Post::orderBy('created_at', 'desc')->withCount("zans")->withCount("comments")->with(['user'])->paginate(5);
+        return view('post/index', compact('posts','user'));
 
     }
 
@@ -26,7 +28,8 @@ class PostController extends Controller
 
         //预加载,以便于在模板中使用关联模型的时候，预先加载数据，达到MVC的效果
         $post->load('comments');
-        return view('post/show', compact('post'));
+        $user = \Auth::user();
+        return view('post/show', compact('post','user'));
 
     }
 
