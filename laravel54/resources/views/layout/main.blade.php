@@ -43,6 +43,7 @@
 
     <div class="row">
         @yield("content")
+        @include("layout.sidebar")
 
     </div><!-- /.row -->
 </div><!-- /.container -->
