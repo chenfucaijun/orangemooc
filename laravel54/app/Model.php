@@ -9,5 +9,4 @@ class Model extends BaseModal
 {
     protected $guarded = [];
     protected $dates = ['deleted_at'];
-    //不可以填充的数据
 }
