@@ -28,6 +28,18 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('/posts/{post}/status','\App\Admin\Controllers\PostController@status');
 
 
+        // 角色管理
+        Route::get('/roles', '\App\Admin\Controllers\RoleController@index');
+        Route::get('/roles/create', '\App\Admin\Controllers\RoleController@create');
+        Route::post('/roles/store', '\App\Admin\Controllers\RoleController@store');
+        Route::get('/roles/{role}/permission', '\App\Admin\Controllers\RoleController@permission');
+        Route::post('/roles/{role}/permission', '\App\Admin\Controllers\RoleController@storePermission');
+
+
+        // 权限管理
+        Route::get('/permissions', '\App\Admin\Controllers\PermissionController@index');
+        Route::get('/permissions/create', '\App\Admin\Controllers\PermissionController@create');
+        Route::post('/permissions/store', '\App\Admin\Controllers\PermissionController@store');
 
     });
 
