@@ -15,4 +15,8 @@ class Topic extends Model
     {
         return $this->belongsToMany(\App\Post::class, 'post_topics', 'topic_id', 'post_id');
     }
+
+    public function postTopics(){
+        return $this->hasMany(\App\PostTopic::class,'topic_id');
+    }
 }

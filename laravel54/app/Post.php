@@ -5,6 +5,7 @@ namespace App;
 use App\Model;
 use function GuzzleHttp\Psr7\_parse_request_uri;
 use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Builder;
 
 class Post extends Model
 {
@@ -58,5 +59,49 @@ class Post extends Model
         ];
 
     }
+
+
+    /*
+    * 一篇文章有哪些主题
+    */
+    public function topics()
+    {
+        return $this->belongsToMany(\App\Topic::class, 'post_topics', 'post_id', 'topic_id')->withPivot(['topic_id', 'post_id']);
+    }
+
+    public function postTopics()
+    {
+        return $this->hasMany(\App\PostTopic::class, 'post_id');
+    }
+
+
+    //不属于某个专题的文章
+    public function scopeTopicNotBy(Builder $query, $topic_id)
+    {
+        return $query->doesntHave('postTopics', 'and', function($q) use ($topic_id) {
+            $q->where("topic_id", $topic_id);
+        });
+    }
+
+
+
+
+    /*
+     * 可以显示的文章
+     */
+    public function scopeAviable($query)
+    {
+        return $query->whereIn('status', [0, 1]);
+    }
+
+    //属于某一个作者的文章
+    public function scopeAuthorBy(Builder $query, $user_id)
+    {
+        return $query->where('user_id',$user_id);
+    }
+
+
+
+
 
 }

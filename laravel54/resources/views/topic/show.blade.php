@@ -19,15 +19,16 @@
                     <h4 class="modal-title" id="myModalLabel">我的文章</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="/topic/{{$topic->id}}/submit">
-                        {{--@foreach($myposts as $post)--}}
-                            {{--<div class="checkbox">--}}
-                                {{--<label>--}}
-                                    {{--<input type="checkbox" name="post_ids[]" value="{{$post->id}}">--}}
-                                    {{--{{$post->title}}--}}
-                                {{--</label>--}}
-                            {{--</div>--}}
-                        {{--@endforeach--}}
+                    <form action="/topic/{{$topic->id}}/submit" method="POST">
+                        {{csrf_field()}}
+                        @foreach($myposts as $post)
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="post_ids[]" value="{{$post->id}}">
+                                    {{$post->title}}
+                                </label>
+                            </div>
+                        @endforeach
                         <button type="submit" class="btn btn-default">投稿</button>
                     </form>
                 </div>
