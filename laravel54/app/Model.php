@@ -9,5 +9,5 @@ class Model extends BaseModal
 {
     protected $guarded = [];
     protected $dates = ['deleted_at'];
-    //
+
 }
