@@ -23,6 +23,12 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('/users/{user}/role', '\App\Admin\Controllers\UserController@storeRole');
 
 
+        //审核模块
+        Route::get('/posts','\App\Admin\Controllers\PostController@index');
+        Route::post('/posts/{post}/status','\App\Admin\Controllers\PostController@status');
+
+
+
     });
 
 
