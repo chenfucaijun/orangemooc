@@ -85,5 +85,9 @@ Route::post('/topic/{topic}/submit','\App\Http\Controllers\TopicController@submi
 //通知页面
 Route::get('/notices','\App\Http\Controllers\NoticeController@index');
 
+//课程页面
+Route::get('/courses','\App\Http\Controllers\CourseController@index');
+
+
 
 include_once('admin.php');
