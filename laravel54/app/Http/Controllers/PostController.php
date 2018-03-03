@@ -16,6 +16,12 @@ class PostController extends Controller
         $user = \Auth::user();
 
         $posts = Post::orderBy('created_at', 'desc')->withCount("zans")->withCount("comments")->with(['user'])->paginate(5);
+
+        /*
+         * 优化方式:预加载
+           $posts->load('user');
+
+         */
         return view('post/index', compact('posts','user'));
 
     }
