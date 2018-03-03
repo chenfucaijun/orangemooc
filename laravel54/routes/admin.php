@@ -36,14 +36,22 @@ Route::group(['prefix' => 'admin'], function () {
             Route::post('/permissions/store', '\App\Admin\Controllers\PermissionController@store');
         });
 
-        Route::group(['middleware' => 'can:post'], function (){
+        Route::group(['middleware' => 'can:post'], function () {
             //文章审核模块
             Route::get('/posts', '\App\Admin\Controllers\PostController@index');
             Route::post('/posts/{post}/status', '\App\Admin\Controllers\PostController@status');
         });
 
 
-        Route::resource('topics','\App\Admin\Controllers\TopicController');
+        //话题增添改查
+        Route::resource('topics', '\App\Admin\Controllers\TopicController');
+
+        //通知增添改查
+        Route::group(['middleware' => 'can:notice'], function () {
+
+            Route::resource('notices', '\App\Admin\Controllers\NoticeController');
+
+        });
 
 
     });

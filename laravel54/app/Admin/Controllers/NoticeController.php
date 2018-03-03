@@ -4,8 +4,8 @@ namespace App\Admin\Controllers;
 
 use App\Topic;
 use Illuminate\Http\Request;
-
-class TopicController extends Controller
+use Illuminate\Support\Facades\Log;
+class NoticeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,9 @@ class TopicController extends Controller
      */
     public function index()
     {
-        $topics = \App\Topic::all();
-        return view('admin/topic/index', compact('topics'));
+        $notices = \App\Notice::all();
+
+        return view('admin/notice/index', compact('notices'));
     }
 
     /**
@@ -25,7 +26,7 @@ class TopicController extends Controller
      */
     public function create()
     {
-        return view('admin/topic/create');
+        return view('admin/notice/create');
     }
 
     /**
@@ -37,11 +38,19 @@ class TopicController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|min:3'
+            'title' => 'required|min:3',
+            'content' => 'required|min:3'
         ]);
 
-        \App\Topic::create(request(['name']));
-        return redirect('/admin/topics');
+        $notice = \App\Notice::create(request(['title', 'content']));
+
+        //分发通知
+        Log::debug("--------准备分发通知--------");
+
+        dispatch(new \App\Jobs\SendMessage($notice));
+
+
+        return redirect('/admin/notices');
     }
 
     /**
@@ -50,9 +59,8 @@ class TopicController extends Controller
      * @param  \App\Topic  $topic
      * @return \Illuminate\Http\Response
      */
-    public function show(Topic $topic)
+    public function show()
     {
-        return view('admin/topic/show', compact('topic'));
     }
 
     /**
@@ -61,7 +69,7 @@ class TopicController extends Controller
      * @param  \App\Topic  $topic
      * @return \Illuminate\Http\Response
      */
-    public function edit(Topic $topic)
+    public function edit()
     {
         //
     }
@@ -84,14 +92,7 @@ class TopicController extends Controller
      * @param  \App\Topic  $topic
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Topic $topic)
+    public function destroy()
     {
-        $topic->delete();
-        return [
-            'error' => 0,
-            'msg' => '',
-        ];
     }
-
-
 }

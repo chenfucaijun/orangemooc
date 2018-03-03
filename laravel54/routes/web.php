@@ -82,5 +82,8 @@ Route::get('/topic/{topic}','\App\Http\Controllers\TopicController@show');
 //投稿
 Route::post('/topic/{topic}/submit','\App\Http\Controllers\TopicController@submit');
 
+//通知页面
+Route::get('/notices','\App\Http\Controllers\NoticeController@index');
+
 
 include_once('admin.php');
