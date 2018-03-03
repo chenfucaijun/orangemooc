@@ -43,6 +43,7 @@ Route::group(['prefix' => 'admin'], function () {
         });
 
 
+        Route::resource('topics','\App\Admin\Controllers\TopicController');
 
 
     });
