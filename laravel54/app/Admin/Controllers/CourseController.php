@@ -1,35 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Admin\Controllers;
 
-use App\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
     /**
-     * 显示课程推荐列表.
-     *
-     * @return Response
-     */
-    public function all_index()
-    {
-
-        $user = \Auth::user();
-
-//        $posts = Course::orderBy('created_at', 'desc')->withCount("zans")->withCount("comments")->with(['user'])->paginate(5);
-        $courses = Course::orderBy('created_at', 'desc')->withCount("zans")->paginate(5);
-
-        /*
-         * 优化方式:预加载
-           $posts->load('user');
-
-         */
-        return view('course.all_course_index', compact('courses','user'));
-    }
-
-    /**
-     * 显示所有课程推荐列表.
+     * 显示课程列表.
      *
      * @return Response
      */
@@ -38,10 +16,6 @@ class CourseController extends Controller
         //
         return view("course.index");
     }
-
-
-
-
 
     /**
      * 创建新课程表单页面
@@ -70,13 +44,9 @@ class CourseController extends Controller
      * @param int $id
      * @return Response
      */
-    public function show(Course $course)
+    public function show($id)
     {
         //
-        //预加载,以便于在模板中使用关联模型的时候，预先加载数据，达到MVC的效果
-        $course = \Auth::user();
-        return view('course/show', compact('course','user'));
-
     }
 
     /**

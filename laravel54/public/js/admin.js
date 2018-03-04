@@ -50,3 +50,37 @@ $(".resource-delete").click(function(event){
         }
     });
 });
+
+$("#jquery_jplayer_1").jPlayer({
+
+    ready: function () {
+
+        $(this).jPlayer("setMedia", {
+
+            m4v: "mi4.m4v",
+
+            ogv: "mi4.ogv",
+
+            webmv: "http://jq22.qiniudn.com/www.jq22.commi4.webm",
+
+            poster: "mi4.png"
+
+        });
+
+    },
+
+    swfPath: "js",
+
+    supplied: "webmv, ogv, m4v",
+
+    size: {
+
+        width: "570px",
+
+        height: "340px",
+
+        cssClass: "jp-video-360p"
+
+    }
+
+});

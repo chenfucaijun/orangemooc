@@ -11,6 +11,7 @@
 
 
 <!-- Morris.js charts -->
+
 <script src="/adminlte/bower_components/raphael/raphael.min.js"></script>
 <script src="/adminlte/bower_components/morris.js/morris.min.js"></script>
 <!-- Sparkline -->
@@ -37,6 +38,10 @@
 <script src="/adminlte/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/adminlte/dist/js/demo.js"></script>
+
+
+{{--<script type="text/javascript" src="/js/jquery.video-ui.js"></script>--}}
+<script src="/js/jvideo.js"></script>
 
 {{--admin.js--}}
 <script src="/js/admin.js"></script>
