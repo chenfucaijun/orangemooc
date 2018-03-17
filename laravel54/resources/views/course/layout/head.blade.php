@@ -28,6 +28,9 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
+    <!--引入wangEditor.css-->
+
+    <link rel="stylesheet" href="/css/wangEditor.min.css">
 
 
     <link rel="stylesheet" href="/css/mine.css">

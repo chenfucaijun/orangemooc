@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('course.layout.main')
 
 @section('content')
 

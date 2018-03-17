@@ -61,7 +61,7 @@ $("#jquery_jplayer_1").jPlayer({
 
             ogv: "mi4.ogv",
 
-            webmv: "http://jq22.qiniudn.com/www.jq22.commi4.webm",
+            webmv: "/video/js.mp4",
 
             poster: "mi4.png"
 

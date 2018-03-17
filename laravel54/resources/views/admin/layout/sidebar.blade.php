@@ -26,14 +26,30 @@
             @endcan
             <li class="active treeview">
                 <a href="/admin/topics">
-                    <i class="fa fa-dashboard"></i> <span>专题管理</span>
+                    <i class="fa fa-dashboard"></i> <span>课程管理</span>
                 </a>
             </li>
             <li class="active treeview">
-                <a href="/admin/notices">
-                    <i class="fa fa-dashboard"></i> <span>通知管理</span>
+                <a href="/admin/topics">
+                    <i class="fa fa-dashboard"></i> <span>实验管理</span>
                 </a>
             </li>
+                <li class="active treeview">
+                    <a href="/admin/topics">
+                        <i class="fa fa-dashboard"></i> <span>试题管理</span>
+                    </a>
+                </li>
+
+            <li class="active treeview">
+                <a href="/admin/topics">
+                    <i class="fa fa-dashboard"></i> <span>知识专题管理</span>
+                </a>
+            </li>
+            {{--<li class="active treeview">--}}
+                {{--<a href="/admin/notices">--}}
+                    {{--<i class="fa fa-dashboard"></i> <span>通知管理</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
         </ul>
     </section>
     <!-- /.sidebar -->

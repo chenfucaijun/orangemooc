@@ -12,7 +12,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">MOOC所有课程</a></li>
+                    <li class=""><a href="#">MOOC所有课程</a></li>
                     <li ><a href="#">MOOC推荐课程</a></li>
 
 

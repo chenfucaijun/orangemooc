@@ -43,5 +43,8 @@
 {{--<script type="text/javascript" src="/js/jquery.video-ui.js"></script>--}}
 <script src="/js/jvideo.js"></script>
 
+<script type="text/javascript" src="/js/wangEditor.min.js"></script>
+<script type="text/javascript" src="/js/mine.js"></script>
+
 {{--admin.js--}}
 <script src="/js/admin.js"></script>
