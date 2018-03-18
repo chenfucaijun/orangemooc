@@ -16,6 +16,10 @@ Route::get('/', function () {
 });
 
 
+
+Route::get('/recommend', "\App\Http\Controllers\RecomController@index");
+
+
 //登录
 Route::get('/login', "\App\Http\Controllers\LoginController@index");
 Route::post('/login', "\App\Http\Controllers\LoginController@login");
@@ -25,6 +29,7 @@ Route::get('/logout', "\App\Http\Controllers\LoginController@logout");
 //注册
 Route::get('/register', "\App\Http\Controllers\RegisterController@index");
 Route::post('/register', "\App\Http\Controllers\RegisterController@register");
+
 
 
 Route::group(['middleware' => 'auth'], function () {
@@ -102,6 +107,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/courses/{course}/edit', '\App\Http\Controllers\CourseController@update');
 //删除课程
     Route::get('/courses/{course}/delete', '\App\Http\Controllers\CourseController@show');
+
+
 
 
 });
