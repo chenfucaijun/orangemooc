@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 
 
-Route::get('/recommend', "\App\Http\Controllers\RecomController@index");
+
+//Route::get('/recommend', "\App\Http\Controllers\RecomController@index");
 
 
 //登录
